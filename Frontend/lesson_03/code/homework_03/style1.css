@@ -1,0 +1,30 @@
+body{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 600px;
+        margin: 40px;
+        padding: 0; 
+}
+h1{ 
+    margin: 15px auto 30px auto; /* 15 px - same margin as paragraphs, 30px -increased margin-bottom for more space*/
+    padding: 0;
+}
+p {
+    margin: 15px auto;
+    padding: 3px;
+    border: 3px solid red;
+    background-color: cornsilk;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+/* 4th Paragraph: Inline elements are styled within the paragraph */
+p:nth-of-type(4) span {
+    border: 3px solid blue; 
+    display: inline-block;
+}
+
+p:nth-of-type(4) img {
+    display: block;
+    width: 470px;
+    margin-top: 0.1em; /* Reduced margin for less space between image and last line */
+}
