@@ -22,9 +22,8 @@ p:nth-of-type(4) span {
     border: 3px solid blue; 
     display: inline-block;
 }
-
 p:nth-of-type(4) img {
-    display: block;
+    display: flex;
     width: 470px;
-    margin-top: 0.1em; /* Reduced margin for less space between image and last line */
+    margin-top: 2px; /* Reduced margin for less space between image and last line */
 }
