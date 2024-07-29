@@ -1,0 +1,84 @@
+body{
+    background-color: rgba(167, 162, 162, 0.73);
+   
+}
+.container{
+    box-sizing: border-box;
+    width: 350px;
+    display: flexbox;
+    margin-left: 30px;
+    border-color: black;
+    /*border: 50px 50px 50px 50px;*/
+    text-align: center;
+}
+.card1{
+    border: 2px solid black;
+    padding: 10px;
+    background-color:rgba(151, 192, 198, 0.491);
+    font-weight: bold;
+    border-style:dashed;
+    margin-bottom: 30px;
+    border-radius: 30px 80px;
+}
+div:nth-of-type(1) img{
+    width: 200px;
+}
+div:nth-of-type(1) h1{
+    color: rgb(82, 7, 7);
+}
+.card1 p:nth-of-type(1){
+color: rgb(82, 7, 7);
+line-height: 0.8;
+}
+.card2{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgba(89, 136, 155, 0.931);
+    font-weight: bold;
+    border-style: dotted;
+    margin-bottom: 30px;
+    border-radius: 30px 80px;
+}
+.card2 p:nth-of-type(1){
+color: rgb(82, 7, 7);
+line-height: 0.8;
+}
+.card3{
+    border: 2px solid rgb(152, 148, 148);
+    padding: 10px;
+    background-color: rgba(185, 189, 196, 0.882);
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-radius: 30px 80px;
+}
+.card3 p:nth-of-type(1){
+color: rgb(82, 7, 7);
+line-height: 0.8;
+    }
+    .card4{
+        border: 2px solid rgb(127, 158, 192);
+        padding: 10px;
+        background-color:rgb(241, 236, 216);
+        font-weight: bold;
+        border-left: 2px;
+        margin-bottom: 30px;
+        border-radius: 30px 80px;
+    }
+    .card4 p:nth-of-type(1){
+    color: rgb(82, 7, 7);
+    line-height: 0.8;
+        }
+        .card5{
+            border: 2px solid black;
+            padding: 10px;
+            background-color:rgba(225, 211, 193, 0.814);
+            font-weight: bold;
+            border-style:solid;
+            border-right: 3px;
+            margin-bottom: 30px;
+            border-radius: 30px 80px;
+        }
+        .card5 p:nth-of-type(1){
+        color: rgb(82, 7, 7);
+        line-height: 0.8;
+            }
