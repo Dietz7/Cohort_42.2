@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="">
+    <form action="" method="get">
     <div>
         <label for="email_">Email
             <input type="email" id="email_" placeholder="Input your email"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -20,15 +20,15 @@
 <div>
    Your age:
    <div>
-    <input type="radio" name=""id="age1" value="0-18">
-    <label for="age1">0-18</label>
+    <input type="radio" name=""id="age1"value="0-18">
+    <label for="age1" tabindex="1">0-18</label>
    </div>
-    <input type="radio" name=""id="age2" value="19-50">
-    <label for="age2">19-50</label>
+    <input type="radio" name=""id="age2"  value="19-50">
+    <label for="age2" tabindex="1">19-50</label>
 </div>
 <div>
     <input type="radio" name=""id="age3" value="50+">
-    <label for="age3">50+</label>
+    <label for="age3"tabindex="1" >50+</label>
 </div>
 <div>
     <input type="color" name="color"id="favourite-color">
@@ -75,7 +75,17 @@ oninput="this,nextElementSibling.value= this.value">
     <label for="agree3">Agree to rent your flat</label>
 </div>
 
+<div>
+    <p>
+        <input type="file" name="userPhoto" id="" tabindex="1">
+    </p>
 </div>
+<div>
+    <p>Action</p>
+    <button type="submit">Submit</button>
+    <button type="reset">Clear form</button>
+</div>
+
 
 </form>
 </body>
