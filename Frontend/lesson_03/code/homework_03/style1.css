@@ -18,11 +18,11 @@ p {
 }
 
 /* 4th Paragraph: Inline elements are styled within the paragraph */
-p:nth-of-type(4) span {
+span {
     border: 3px solid blue; 
     display: inline-block;
 }
-p:nth-of-type(4) img {
+ img {
     display: flex;
     width: 470px;
     margin-top: 2px; /* Reduced margin for less space between image and last line */
