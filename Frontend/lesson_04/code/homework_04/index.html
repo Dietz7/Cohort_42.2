@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  <script src="https://kit.fontawesome.com/b7a31c86ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./santa-claus-icon.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa's page</title>
+</head>
+<body>
+   <h1>Letter to Santa</h1>
+   <h3>Dear Friend tell Santa about yourself and what Christmas present would you like to get this year.</h3>
+   <i class="fas fa-email"></i>
+   <form action="greetings.html" id="contact_form">
+<div>
+    <label for="username">Login</label>
+    <input type="text" id="username" placeholder="Enter your email" required>
+</div>
+<br>
+<div>
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Password" required>
+</div>
+<br>
+<div>
+    <label for="full_name">Full Name</label>
+    <input type="text" id="full_name" placeholder="Full Name" required>
+</div>
+<br>
+<div>
+    <label for="gender">Gender:</label> <br><br>
+    <label for="gender" tabindex="1"> Girl</label>
+    <input type="radio" name="q" id="gender" value="girl">
+    <label for="gender" tabindex="1">Boy</label>
+    <input type="radio" name="q" id="gender" value="boy">
+</div>
+<br>
+<div>
+    <label for="date_birth">When is your birthday?</label>
+    <input type="date" name="" id="date_birth" required>
+</div>
+<p>Dear Friend Santa loves all children and wants you to be honest with him so that he can really make something good for you. So the next question is:</p>
+<div>
+    <label for="behaviour">Have you been good this year?</label> <br>
+    <input type="radio" name="q" id="vgood" value="very_good">
+    <label for="very_good" tabindex="1">Very good</label>
+</div>
+<div>
+    <input type="radio" name="q" id="good" value="good">
+    <label for="good"tabindex="1">Good</label>
+</div>
+<div>
+    <input type="radio" name="q" id="ngood" value="not_good">
+    <label for="not_good" tabindex="1">Not good, but will be better from now</label> 
+</div>
+
+    <p>What are you ready to do from today if you haven't been good this year? </p>
+    <div>
+    <input type="checkbox" name="clean" id="agree1" value="YES"> 
+    <label for="agree1">I will be cleaning up my toys</label>
+
+</div>
+<div>
+    <input type="checkbox" name="no_lie" id="agree2" value="YES">
+    <label for="agree2">I will be telling the truth to parents</label>
+</div>
+<div>
+    <input type="checkbox" name="homework" id="agree3" value="YES">
+    <label for="agree3">I will be doing my homework</label>
+</div>
+<div>
+    <input type="checkbox" name="protect" id="agree4" value="YES">
+    <label for="agree4">I will be protecting the weak and girls</label>
+</div>
+<div>
+    <input type="checkbox" name="reading" id="agree5" value="YES">
+    <label for="agree5">I will be reading some good books</label>
+</div>
+<div>
+    <input type="checkbox" name="Sport" id="agree6" value="YES">
+    <label for="agree6">I will be doing sport</label>
+</div>
+<br>
+<div>
+    <input type="checkbox" name="agree_promise" id="agree7" value="YES">
+    <label for="agree7">I agree to promise Santa to do regularly what I have chosen above</label>
+</div>
+<div> 
+    <p>
+  And now it is time to choose your present   <i class="fa-solid fa-gift"></i>
+</p>
+</div>
+<div>
+    <input type="color" name="color"id="favourite-color">
+    <label for="favourite-color">Favourite colour</label>
+</div>
+
+<div>
+    <input type="radio" name="q" id="p1" value="toy">
+    <label for="toy" tabindex="1">Toy</label>
+</div>
+<div>
+    <input type="radio" name="q" id="p2" value="clothing">
+    <label for="clothing" tabindex="1">Clothing</label>
+</div>
+<div>
+    <input type="radio" name="q" id="p3" value="sport_shoes">
+    <label for="sport_shoes" tabindex="1">Sport Shoes</label>
+</div>
+<div>
+    <input type="radio" name="q" id="p4" value="book">
+    <label for="book" tabindex="1">Book</label>
+</div>
+<div>
+    <input type="radio" name="q" id="p5" value="other">
+    <label for="other"tabindex="1">Other</label>
+</div>
+Please type here what do you want if you have chosen the field "Other":
+<div>
+    <textarea name="text" id="" cols="30" rows="10"></textarea>
+</div>
+<div>
+<p>You can also send Santa a photo of the present you would like to get. <br><br>
+    <input type="file" name="presentPhoto" id="" tabindex="1">
+</p>
+</div>
+
+<div>
+    <p> 
+        What adress can Santa deliver your present to?  <i class="fa-solid fa-location-dot"></i><br> <br>
+        <label for="text">Street</label>
+        <input type="text" id="street" placeholder="input your street" required> <br><br>
+        <label for="text">City</label>
+        <input type="text" id="city" placeholder="input your city" required> <br><br>
+        <label for="text">Postal code</label>
+        <input type="text" id="postal_code" placeholder="input your postal code"required> <br>
+    </p>
+</div>
+<div>
+    <button type="submit" a href="greetings.html" >Send letter to Santa</button>
+    <button type="reset">Reset</button>
+</div>
+
+
+   </form> 
+</body>
+</html>
