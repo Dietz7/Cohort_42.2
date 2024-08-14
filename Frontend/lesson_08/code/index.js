@@ -96,36 +96,35 @@ if (age < 18){
     console.log("You are a pensioner");
 }
 
-//let day = 3;
-//let dayName;
-//switch(day) {
-   // case 1:
-      //  dayName = "Monday"
-        //break;
+let day = 3;
+let dayName;
+switch(day) {
+   case 1:
+      dayName = "Monday"
+    break;
 
-        //case 2:
-//     dayName = "Вторник";
-//     break;
-//   case 3:
-//     dayName = "Среда";
-//     break;
-//   case 4:
-//     dayName = "Четверг";
-//     break;
-//   case 5:
-//     dayName = "Пятница";
-//     break;
-//   case 6:
-//     dayName = "Суббота";
-//     break;
-//   case 7:
-//     dayName = "Воскресенье";
-//     break;
-//   default:
-//     dayName = "Некорректный номер дня";
-// }
-
-// console.log(dayName);
+    case 2:
+dayName = "Tuesday";
+break;
+case 3:
+dayName = "Wednesday";
+break;
+case 4:
+dayName = "Thursday";
+break;
+case 5:
+dayName = "Friday";
+break;
+case 6:
+dayName = "Saturday";
+break;
+case 7:
+dayName = "Sunday";
+break;
+default:
+dayName = "It is incorrect number of the day!";
+}
+console.log(dayName);
 
 const firstName = "Mykhail";
 const lastName = "Ivanov";
