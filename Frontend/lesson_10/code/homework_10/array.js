@@ -1,10 +1,10 @@
 // Task1
 //Create an array of strings and print its length, the first and the last elements of the array to the console
 
-let string = ["I", "love",  "to", "learn", "something", "new"];
-console.log(string.length);
-console.log(string[0]);
-console.log(string[5]);
+let words = ["I", "love",  "to", "learn", "something", "new"];
+console.log(words);
+console.log(words[0]);
+console.log(words[words.length - 1]);
 //My notes: the value of the length property is a nonnegative integer with a value less than 2^32.
 
 //Task2
@@ -22,8 +22,8 @@ for( let i = 0; i < arr.length; i++){
 if (arr[i] % 2 === 0) {
     newArr.push(arr[i]);
 }
-console.log(newArr);
 }
+console.log(newArr);
 
 // While loop
 let arr1 = [1, 2, 3, 4, 5, 6];
