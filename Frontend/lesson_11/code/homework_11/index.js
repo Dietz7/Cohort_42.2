@@ -6,7 +6,7 @@
 function multiplyArray(arr){    
 
 // 2. Where we put and store our new doubled values? In our new array.
-let doubled = [];
+let doubled = []; // not necessary
 
 for(let number of arr) {
     doubled.push(number*2)
@@ -26,7 +26,6 @@ console.log(result);
 
 function getFirstNsymbols(str, n) {
        let result = '' // where we store our result? In an empty string
-
 
 let count = 0; //variable for tracking the number of the added symbols
 for(const symbol of str){
