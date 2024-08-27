@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding:0;*/
+    /* second way of removing of the spaces (instead of the lines 17,18, 31,33)  */
+}
+/* investigation of the quality of the box-sizing:border-box;*/
+/*header{
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 30px;
+}*/
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+/* first way of removing of the spaces */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
