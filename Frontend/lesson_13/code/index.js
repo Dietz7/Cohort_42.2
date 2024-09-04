@@ -25,7 +25,7 @@ console.log(firstTitle);
 // adding of elements to the page
 //Step 1 - Create element
 let newListItem = document.createElement('li');
-// Step 2 fillign with the content
+// Step 2 filling with the content
 newListItem.textContent = 'Surname: Smith'
 // Step 3 - select element on the page in relation to which we will add the one
 let list = document.querySelector('ul');
@@ -56,6 +56,7 @@ cardTitle.style.backgroundColor = "bisque";
 let lastElement = document.querySelector('#last-element');
 lastElement.remove();
 // document.querySelector('#last-element').remove();
+
 
 
 
