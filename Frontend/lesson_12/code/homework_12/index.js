@@ -1,41 +1,50 @@
-/*Одним из преимуществ помещения в память объявлений функций до выполнения кода является возможность использовать 
-функцию до её объявления. Например:*/
-function catName(name){
-    console.log("The name of my cat is " + name)
+//Необходимо создать функцию с названием arrayProcessor, которая будет принимать два параметра, первый параметр - массив, 
+//второй параметр - функция callback
+
+//Требования:
+
+//1.Функция arrayProcessor должна выполнять 3 действия:
+//первое действие - преобразовать каждый элемент, в переданном массиве, в строку, результат должен сохраняться в новом массиве
+//(то есть не мутировать входной массив)
+//вызывать функцию, которая была передана в параметрах (функция callback будет принимать в качестве параметра преобразованный 
+//на первом шаге массив)
+//возвращать то, что вернула функция callback после её вызова
+//2.Чтобы показать пример использования функции arrayProcessor вам нужно:
+//создать ещё две функции (требования к функциям см. в пункте 3)
+//вызвать arrayProcessor с каждой из функций по очереди
+//каждый из 2-х результатов вывести в консоль
+//3.Требования к функциям callback
+//первая функция должна преобразовывать каждый элемент массива в верхний регистр и возвращать новый массив с преобразованными 
+//элементами
+//вторая функция должна возвращать сумму длин всех строк*/
+
+function arrayProcessor(array, operation){
+    let stringArray = []; 
+        for(let element of array) {
+            stringArray.push(String(element));
+        }
+    return operation(stringArray);
     }
-    catName("Tiger");
 
+    function toUpperCaseArray(array){
+        let upperCaseArray = [];
+        for(let element of array){
+            upperCaseArray.push(element.toUpperCase());
+        }
+        return upperCaseArray;
+    }
     
-    //когда мы вызываем функцию в коде до её объявления:
-
-catName("Tom");
-
-function catName(name){
- console.log("The name of my cat is " + name);
+    function stringLength(array){
+        let lengthTotal = 0;
+        for(let element of array){
+            lengthTotal+= element.length;
+    }
+    return lengthTotal;
+    }
     
-}
-//Даже если мы вызываем функцию до её объявления, код работает. Это происходит благодаря тому, как работает 
-//контекст выполнения в JavaScript.
-
-// Hoisting хорошо работает и с другими типами данных и переменными. Переменные могут быть инициализированы и использованы 
-//до их объявления. Однако, они не могут быть использованы без инициализации.
-
-num = 6;
-num + 7;
-var num;
-console.log(num);
-
-var x = 1; //Инициализируем x
-console.log(x + " " + y); // '1 undefined'
-var y = 2;
-
-var x = 1;
-var y;
-console.log(x + " " + y);
-var y = 2;
-
-//https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/function
-// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/var
-
-// https://www.youtube.com/watch?v=i2SPq-nb3NQ 
-
+    let originalArray = ['apple', 27, 'banana', 'kiwi'];
+    let upperCaseResult = arrayProcessor(originalArray, toUpperCaseArray);
+    console.log(upperCaseResult);
+    let lengthTotalResult = arrayProcessor(originalArray, stringLength);
+    console.log(lengthTotalResult);
+    
