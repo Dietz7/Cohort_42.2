@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Employee</title>
+   <script src="./index.js" defer ></script>
+  </head>
+  <body>
+    <h1>Create Employee</h1>
+    <div class="main">
+    <div class="form-container">
+      <div class="form-input">
+        <form action="" id="form">
+          <div class="input-date">
+            <label for="name">Name*</label>
+            <input
+              name="userName"
+              class="user-input"
+              type="text"
+              placeholder="Enter employee Name"
+              id="name"
+              
+            />
+          </div>
+          <div class="input-date">
+            <label for="surname">Surname*</label>
+            <input
+              name="userSurname"
+              class="user-surname"
+              type="text"
+              placeholder="Enter employee Surname"
+              id="surname"
+              
+            />
+          </div>
+          <div class="input-date">
+            <label for="age">Age*</label>
+            <input
+              name="userAge"
+              class="user-age"
+              type="number"
+              min="0"
+              max="120"
+              placeholder="Enter employee Age"
+              id="age"
+              
+            />
+          </div>
+          <div class="input-date">
+            <label for="job">Job Position</label>
+            <input
+              type="text"
+              name="userJob"
+              class="user-job"
+              placeholder="Enter employee Position"
+              id="job"
+            />
+          </div>
+          <div>
+            <button type="submit">Create</button>
+          </div>
+
+        </form>
+      </div>
+      
+    </div>
+    <div class="card-container" >
+      <div class="result-container">
+        <div class="info-date">Name</div>
+        <div class="result-date" id="resultName"></div>
+      </div>
+      <div class="result-container">
+        <div class="info-date">Surname</div>
+        <div class="result-date" id="resultSurname"></div>
+      </div>
+      <div class="result-container">
+        <div class="info-date">Age</div>
+        <div class="result-date" id="resultAge"></div>
+      </div>
+      <div class="result-container">
+        <div class="info-date">Job Position</div>
+        <div class="result-date" id="resultJob"></div>
+      </div>
+    </div>
+</div>
+  </body>
+</html>
