@@ -40,7 +40,7 @@ hideButton.addEventListener("click", hideCardFunction);
 let searchField = document.querySelector('#search-input');
 
 let changeInput =()=>{
-    onsole.log(event.target.value);
+    console.log(event.target.value);
 };
 
 //searchField.addEventListener("change", (event)=>{
