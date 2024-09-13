@@ -1,0 +1,75 @@
+body, html{
+    padding:0;
+    margin:0;
+    min-height:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+#root{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    height:auto;
+    margin: auto;;
+}
+
+h1 {
+    color: #333; /* Dark gray color for text */
+    margin-bottom: 20px;
+}
+
+/* Card styling */
+.spaceship-card {
+    width: 100%;
+    padding: 20px;
+    background-color: #fafafa; /* Light gray background for card */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styling */
+.name, .manufacturer, .crew, .max-speed {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+}
