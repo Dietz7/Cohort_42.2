@@ -1,0 +1,65 @@
+*{
+    box-sizing:border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, hsla(240, 100%, 50%, 0.3), hsla(39, 99%, 42%, 0.516));
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.price-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+
+}
+.price-block{
+    padding: 15px;
+    background-color:  #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.4);
+}
+
+#filterButton{
+    padding: 10px 20px;
+    background-color: hsl(240, 100%, 25%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2 ease;
+    margin: 20px;
+}
+#filterButton:hover{
+    background-color: hsla(253, 100%, 31%, 0.658);
+}
+
