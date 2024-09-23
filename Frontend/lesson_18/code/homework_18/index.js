@@ -24,7 +24,7 @@ const displayTime = (time) => {
     const seconds = Math.floor(time % 60);
 
     const formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
-    const formattedTime = minutes + '0:' + formattedSeconds;
+    const formattedTime = minutes + ':' + formattedSeconds;
 
     document.getElementById("display").textContent = formattedTime;
 };
