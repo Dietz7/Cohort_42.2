@@ -1,0 +1,1 @@
+"This folder contains code projects for Lesson 20, organized by different subfolders."
