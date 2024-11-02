@@ -2,7 +2,7 @@
 const cityInput = document.querySelector(".cityInput");
 const getWeatherButton = document.querySelector("#get-weather-button");
 const displayWeatherContainer = document.querySelector(".display-weather-container");
-const API_KEY = "5e77196db6dc9bd44d2d40b708ff59df";
+const API_KEY = "xy";
 
 const getWeatherData = async () => {
     const city = cityInput.value.trim();
@@ -15,7 +15,7 @@ const getWeatherData = async () => {
     displayWeatherContainer.classList.remove("hidden");
 
     try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric&lang=en`);
+        const response = await fetch(`API_KEY`);
         const weatherData = await response.json(); 
         if (response.ok) {
             // Only if response is okay

@@ -3,7 +3,7 @@
 const weatherForm = document.querySelector(".weatherForm");
 const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card"); 
-const apiKey = "5e77196db6dc9bd44d2d40b708ff59df";
+const apiKey = "xy";
 
 weatherForm.addEventListener("submit", async event => {
 event.preventDefault();
@@ -27,7 +27,7 @@ else{
 
 async function getWeatherData(city){
 
-   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=en`;
+   const apiUrl = `API_KEY`;
    const response = await fetch(apiUrl);
 
   // console.log(response); 
